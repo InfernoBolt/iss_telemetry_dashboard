@@ -15,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={inter.className}>{children}</body>
+      {/* We moved the background, text, and dark mode colors right here! */}
+      <body className={`${inter.className} bg-gray-50 text-gray-900 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100`}>
+        {children}
+      </body>
     </html>
   );
 }
