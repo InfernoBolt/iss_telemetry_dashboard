@@ -1,3 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* This tells Tailwind v4 to enable class-based dark mode toggling */
+@custom-variant dark (&:where(.dark, .dark *));
